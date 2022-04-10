@@ -59,7 +59,7 @@ python .\exporter_main_v2.py --input_type image_tensor --pipeline_config_path .\
 Then you are able to get the interface with getinterface.py. Also, you could export the data into a csv file by uncommenting last few lines.
 
 ## Discussion
-![Detector in action](docs/fromdataset.gif)
+![Detector in action](doc/fromdataset.gif)
 
 In this project, I believe that the most difficult step is 
 
