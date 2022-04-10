@@ -59,8 +59,18 @@ python .\exporter_main_v2.py --input_type image_tensor --pipeline_config_path .\
 Then you are able to get the interface with getinterface.py. Also, you could export the data into a csv file by uncommenting last few lines.
 
 ## Discussion
-![Detector in action](doc/fromdataset.gif)
+[From dataset](doc/fromdataset.gif)
 
-In this project, I believe that the most difficult step is 
+In this project, I believe that the most difficult step is set up your custom dataset. As you can see in the above gif, trained model works well in trained data. However, its performance is not as good as expected in other recordings. 
+
+[From other clip](doc/otherclip.gif)
+
+This can be caused by a variety of reasons:
+
+1. The main problem is that the data size is not enough. 3k is too small for such a project.
+
+2. Ike may not be a ideal research material. As you can see I add label 'landing' in the annotation. It's because so many moves of ike start or end with crounching. In order not to confuse the subject action, all these lags are count into landing.
+
+3. More noticeable movement are needed for this project. For Ike, there is little difference between Nair and Bair's starting because he only have one sword. So maybe Belyth is a better target in this kind of project.
 
 
