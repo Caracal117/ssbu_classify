@@ -59,11 +59,11 @@ python .\exporter_main_v2.py --input_type image_tensor --pipeline_config_path .\
 Then you are able to get the interface with getinterface.py. Also, you could export the data into a csv file by uncommenting last few lines.
 
 ## Discussion
-[From dataset](doc/fromdataset.gif)
+![From dataset](doc/fromdataset.gif)
 
 In this project, I believe that the most difficult step is set up your custom dataset. As you can see in the above gif, trained model works well in trained data. However, its performance is not as good as expected in other recordings. 
 
-[From other clip](doc/otherclip.gif)
+![From other clip](doc/otherclip.gif)
 
 This can be caused by a variety of reasons:
 
