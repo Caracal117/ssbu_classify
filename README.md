@@ -1,21 +1,10 @@
-
-
-6. Export the model
-
-python .\exporter_main_v2.py --input_type image_tensor --pipeline_config_path .\my_ssd_resnet50_v1_fpn\pipeline.config --trained_checkpoint_dir .\my_ssd_resnet50_v1_fpn\ --output_directory .\exported-models\my_model
-
-python .\exporter_main_v2.py --input_type image_tensor --pipeline_config_path .\my_frcnn\pipeline.config --trained_checkpoint_dir .\my_frcnn\ --output_directory .\exported-models\frcnn
-
-python .\exporter_main_v2.py --input_type image_tensor --pipeline_config_path .\class_frcnn_2\pipeline.config --trained_checkpoint_dir .\class_frcnn_2\ --output_directory .\exported-models\class_frcnn_2_20k
-
-7. Get interface with getinterface.py
-
 # SSBU_Classify
 
 This project is intended to analyze pro player's movement in Super Smash Bros Ultimate from video. 
 
 ## Environment setting
-In this project, tenserflow detection API is used and installed from this [tutorial](https://tensorflow-object-detection-api-tutorial.readthedocs.io)
+In this project, tenserflow detection API is used and installed from this [tutorial](https://tensorflow-object-detection-api-tutorial.readthedocs.io).
+
 Make sure the CUDA and toolkit are installed on your computer in order to use GPU to train the model. Once installed, check gpu setup with installtest.py
 + Platform: Windows 10 
 + Tensorflow verion: 2.8.0
@@ -68,5 +57,10 @@ python .\exporter_main_v2.py --input_type image_tensor --pipeline_config_path .\
 ```
 
 Then you are able to get the interface with getinterface.py. Also, you could export the data into a csv file by uncommenting last few lines.
+
+## Discussion
+[Detector in action](docs/fromdataset.gif)
+
+In this project, I believe that the most difficult step is 
 
 
